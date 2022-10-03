@@ -12,33 +12,67 @@
 </head>
 
 <body class="container">
-    <header class="header">
-        <h1 class="header__heading">todos</h1>
-        <div class="header__newtodo">
-            <label class="header__newtodo-label">˅</label>
-            <input class="header__newtodo-text" placeholder="Что нужно сделать?" />
-        </div>
-    </header>
-    <main class="main">
-        <ul class="main__list">
-            <li class="main__list-item">
-                <div class="main__list-wrapper">
-                    <input class="main__list-completed" type="checkbox"/>
-                    <input class="main__list-text" value="newToDo"/>
-                    <button class="main__list-clear">×</button>
-                </div>
-            </li>
-        </ul>
-    </main>
-    <footer class="footer">
-        <p class="footer__count"></p>
-        <div class="footer__filter">
-            <button class="footer__filter-all">All</button>
-            <button class="footer__filter-active">Active</button>
-            <button class="footer__filter-completed">Completed</button>
-        </div>
-        <button class="footer__clear">Clear completed</button>
-    </footer>
+    <section class="todoapp">
+        <header class="header">
+            <h1 class="header__heading">todos</h1>
+            <div class="header__newtodo">
+                <label class="header__newtodo-label">❯</label>
+                <input class="header__newtodo-text" placeholder="Что нужно сделать?" autofocus="" />
+            </div>
+        </header>
+        <main class="main">
+            <ul class="main__list">
+                <li class="main__list-item">
+                    <div class="main__list-wrapper">
+                        <input class="main__list-completed" type="checkbox" id="toggle"/>
+                        <label class="main__list-on" for="toggle">
+                            <img class="main__icon-on" src="completed.svg" alt="pressed" />
+                        </label>
+                        <label class="main__list-off" for="toggle">
+                            <img class="main__icon-off" src="no_completed.svg" alt="not pressed" />
+                        </label>
+                        <input class="main__list-text" value="newToDo" disabled/>
+                        <button class="main__list-clear btn">×</button>
+                    </div>
+                </li>
+                <li class="main__list-item">
+                    <div class="main__list-wrapper">
+                        <input class="main__list-completed" type="checkbox" id="toggle"/>
+                        <label class="main__list-on" for="toggle">
+                            <img class="main__icon-on" src="completed.svg" alt="pressed" />
+                        </label>
+                        <label class="main__list-off" for="toggle">
+                            <img class="main__icon-off" src="no_completed.svg" alt="not pressed" />
+                        </label>
+                        <input class="main__list-text" value="newToDo" disabled/>
+                        <button class="main__list-clear btn">×</button>
+                    </div>
+                </li>
+                <li class="main__list-item">
+                    <div class="main__list-wrapper">
+                        <input class="main__list-completed" type="checkbox" id="toggle"/>
+                        <label class="main__list-on" for="toggle">
+                            <img class="main__icon-on" src="completed.svg" alt="pressed" />
+                        </label>
+                        <label class="main__list-off" for="toggle">
+                            <img class="main__icon-off" src="no_completed.svg" alt="not pressed" />
+                        </label>
+                        <input class="main__list-text" value="newToDo" disabled/>
+                        <button class="main__list-clear btn">×</button>
+                    </div>
+                </li>
+            </ul>
+        </main>
+        <footer class="footer">
+            <p class="footer__count">item 0</p>
+            <div class="footer__filter">
+                <button class="footer__filter-all active btn">All</button>
+                <button class="footer__filter-active btn">Active</button>
+                <button class="footer__filter-completed btn">Completed</button>
+            </div>
+            <button class="footer__clear btn">Clear completed</button>
+        </footer>
+    </section>
 </body>
 
 </html>
